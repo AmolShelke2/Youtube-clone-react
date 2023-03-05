@@ -1,11 +1,15 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ChannelDetail from "./components/ChannelDetail";
-import Feed from "./components/Feed";
-import Navbar from "./components/Navbar";
-import SearchFeed from "./components/SearchFeed";
-import VideoDetail from "./components/VideoDetail";
+import { Box } from "@mui/material";
 
-const App = () => {
+import {
+  Navbar,
+  Feed,
+  VideoDetail,
+  ChannelDetail,
+  SearchFeed,
+} from "./components";
+
+const App = () => (
   <BrowserRouter>
     <Box sx={{ backgroundColor: "#000" }}>
       <Navbar />
@@ -16,7 +20,7 @@ const App = () => {
         <Route path="/search/:searctTerm" exact element={<SearchFeed />} />
       </Routes>
     </Box>
-  </BrowserRouter>;
-};
+  </BrowserRouter>
+);
 
 export default App;
