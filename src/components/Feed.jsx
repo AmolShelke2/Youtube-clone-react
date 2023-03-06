@@ -1,7 +1,9 @@
 import React from "react";
 
-const Feed = () => {
-  return <div>Feed</div>;
-};
+const Feed = () => (
+  <div>
+    <div></div>
+  </div>
+);
 
 export default Feed;
