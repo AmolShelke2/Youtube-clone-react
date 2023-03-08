@@ -1,7 +1,20 @@
-import React from "react";
+import React from 'react';
 
-const Feed = () => (
-  <div>
-    <div></div>
-  </div>
-);
+import { useState, useEffect } from 'react';
+import { Box, Stack, typography } from '@mui/material';
+
+const Feed = () => {
+  return (
+    <Stack sx={{ flexDirection: { sx: 'column', md: 'row' } }}>
+      <Box
+        sx={{
+          height: { sx: 'auto', md: '92vh' },
+          borderRight: '1px solid #3d3d3d',
+          px: { sx: 0, md: 2 },
+        }}
+      ></Box>
+    </Stack>
+  );
+};
+
+export default Feed;
