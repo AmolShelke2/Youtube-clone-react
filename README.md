@@ -1,4 +1,30 @@
-# Getting Started with Create React App
+# Youtube Clone ReactJS.
+
+A fully functional FrontEnd Youtube Clone created with ReactJS and Material UI. Used rapidAPI to and axios to fetch Youtube data.
+
+Give a star to the repo if you love the project.
+
+## Technologies and used tools
+
+- ReactJS
+- Material UI
+- Rapid API
+- Axios
+
+## Things I learned from this project.
+
+- Fetching data from Rapid API.
+- Learnt about Material UI.
+- Styled all the application with Material UI.
+- Created multiple components and worked with State and props.
+
+## Preview
+
+### Live Preview
+
+### ScreenShot
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
