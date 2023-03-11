@@ -18,6 +18,15 @@ Give a star to the repo if you love the project.
 - Styled all the application with Material UI.
 - Created multiple components and worked with State and props.
 
+## Features
+
+- Home section.
+- SideBar to select any category of videos.
+- Search Videos.
+- Channel Detail section.
+- Recommending related videos.
+- Responsive on every devices
+
 ## Preview
 
 ### Live Preview
