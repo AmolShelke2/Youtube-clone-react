@@ -4,6 +4,8 @@ A fully functional FrontEnd Youtube Clone created with ReactJS and Material UI. 
 
 Give a star to the repo if you love the project.
 
+<hr>
+
 ## Technologies and used tools
 
 - ReactJS
@@ -11,12 +13,16 @@ Give a star to the repo if you love the project.
 - Rapid API
 - Axios
 
+<hr>
+
 ## Things I learned from this project.
 
 - Fetching data from Rapid API.
 - Learnt about Material UI.
 - Styled all the application with Material UI.
 - Created multiple components and worked with State and props.
+
+<hr>
 
 ## Features
 
@@ -28,6 +34,8 @@ Give a star to the repo if you love the project.
 - See all the videos of the channel ordered by the date
 - Recommending related videos.
 - Responsive on every devices
+
+<hr>
 
 ## Preview
 
