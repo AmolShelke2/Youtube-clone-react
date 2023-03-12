@@ -24,6 +24,7 @@ Give a star to the repo if you love the project.
 - SideBar to select any category of videos.
 - Search Videos.
 - Channel Detail section.
+- Video detail section, Video play and suggest related videos.
 - See all the videos of the channel ordered by the date
 - Recommending related videos.
 - Responsive on every devices
