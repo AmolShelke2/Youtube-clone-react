@@ -8,7 +8,11 @@ import { Video } from './';
 import { fetchFromAPI } from '../utils/fetchFromAPI';
 
 const VideoDetail = () => {
-  return <div>VideoDetail</div>;
+  return (
+    <Box minHeight="95vh">
+      <Stack></Stack>
+    </Box>
+  );
 };
 
 export default VideoDetail;
