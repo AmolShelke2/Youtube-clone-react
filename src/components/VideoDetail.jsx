@@ -14,7 +14,7 @@ const VideoDetail = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    fetchFromAPI(`videos?part=snippet.statistics&id=${id}`).then(data =>
+    fetchFromAPI(`videos?part=snippet,statistics&id=${id}`).then(data =>
       setVideoDetail(data.items[0]),
     );
   }, [id]);
@@ -35,6 +35,12 @@ const VideoDetail = () => {
               className="react-player"
               controls
             />
+            <Typography
+              color="#fff variant="
+              h5
+              fontWeight="bold"
+              p={2}
+            ></Typography>
           </Box>
         </Box>
       </Stack>
