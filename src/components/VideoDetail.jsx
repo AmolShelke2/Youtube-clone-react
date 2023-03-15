@@ -19,6 +19,8 @@ const VideoDetail = () => {
     );
   }, [id]);
 
+  console.log(videoDetail);
+
   return (
     <Box minHeight="95vh">
       <Stack direction={{ xs: 'column', md: 'row' }}>
@@ -35,12 +37,9 @@ const VideoDetail = () => {
               className="react-player"
               controls
             />
-            <Typography
-              color="#fff variant="
-              h5
-              fontWeight="bold"
-              p={2}
-            ></Typography>
+            <Typography color="#fff" variant="h5" fontWeight="bold" p={2}>
+              {videoDetail.snippet.title}
+            </Typography>
           </Box>
         </Box>
       </Stack>
