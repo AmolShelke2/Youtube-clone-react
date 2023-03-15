@@ -19,8 +19,6 @@ const VideoDetail = () => {
     );
   }, [id]);
 
-  console.log(videoDetail);
-
   return (
     <Box minHeight="95vh">
       <Stack direction={{ xs: 'column', md: 'row' }}>
