@@ -4,8 +4,6 @@ import ReactPlayer from 'react-player';
 import { Typography, Box, Stack } from '@mui/material';
 import { CheckCircle } from '@mui/icons-material';
 
-import { Video } from './';
-
 import { fetchFromAPI } from '../utils/fetchFromAPI';
 
 const VideoDetail = () => {
@@ -13,14 +11,18 @@ const VideoDetail = () => {
 
   const { id } = useParams();
 
-  const { snippet } = videoDetail;
-  console.log(snippet);
-
   useEffect(() => {
     fetchFromAPI(`videos?part=snippet,statistics&id=${id}`).then(data =>
       setVideoDetail(data.items[0]),
     );
   }, [id]);
+
+  if (!videoDetail?.snippet) return 'Loading...';
+
+  const {
+    snippet: { title, channelId, channelTitle },
+    statistics: { viewCount, likeCount },
+  } = videoDetail;
 
   return (
     <Box minHeight="95vh">
@@ -39,8 +41,36 @@ const VideoDetail = () => {
               controls
             />
             <Typography color="#fff" variant="h5" fontWeight="bold" p={2}>
-              {videoDetail.snippet.title}
+              {title}
             </Typography>
+
+            <Stack
+              direction="row"
+              justifyContent="space-between"
+              sx={{ color: '#fff' }}
+              py={1}
+              px={2}
+            >
+              <Link to={`/channe/${channelId}`}>
+                <Typography
+                  variant={{ sm: 'subtitle1', md: 'h6' }}
+                  color="#fff"
+                >
+                  {channelTitle}
+                  <CheckCircle
+                    sx={{ fontSize: '12px', color: 'grey', ml: '5px' }}
+                  ></CheckCircle>
+                </Typography>
+              </Link>
+              <Stack direction="row" gap="20px">
+                <Typography variant="body1" sx={{ opacity: 0.7 }}>
+                  {parseInt(viewCount).toLocaleString()} views
+                </Typography>
+                <Typography variant="body1" sx={{ opacity: 0.7 }}>
+                  {parseInt(likeCount).toLocaleString()} Likes
+                </Typography>
+              </Stack>
+            </Stack>
           </Box>
         </Box>
       </Stack>
