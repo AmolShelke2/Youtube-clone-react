@@ -41,6 +41,8 @@ Give a star to the repo if you love the project.
 
 ### Live Preview
 
+[Youtube-clone-react](https://youtube-clone-react-beta.vercel.app/)
+
 ### ScreenShot
 
 ## Getting Started with Create React App
