@@ -24,17 +24,17 @@ const VideoDetail = () => {
     );
   }, [id]);
 
-  if (!videoDetail?.snippet && !videos?.snippet) return 'Loading...';
+  if (!videoDetail?.snippet) return 'Loading...';
+
+  console.log(videos);
 
   const {
     snippet: { title, channelId, channelTitle },
     statistics: { viewCount, likeCount },
   } = videoDetail;
 
-  console.log(videos);
-
   return (
-    <Box minHeight="95vh">
+    <Box minHeight="95vh" px={1}>
       <Stack direction={{ xs: 'column', md: 'row' }}>
         <Box flex={1}>
           <Box
@@ -82,15 +82,15 @@ const VideoDetail = () => {
             </Stack>
           </Box>
         </Box>
+        <Box
+          px={2}
+          py={{ md: 1, xs: 5 }}
+          justifyContent="center"
+          alignItems="center"
+        >
+          <Videos videos={videos} direction="column" />
+        </Box>
       </Stack>
-      <Box
-        px={2}
-        py={{ md: 1, xs: 5 }}
-        justifyContent="center"
-        alignItems="center"
-      >
-        <Videos videos={videos} />
-      </Box>
     </Box>
   );
 };
