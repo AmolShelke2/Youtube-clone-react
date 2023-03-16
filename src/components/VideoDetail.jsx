@@ -17,6 +17,10 @@ const VideoDetail = () => {
     fetchFromAPI(`videos?part=snippet,statistics&id=${id}`).then(data =>
       setVideoDetail(data.items[0]),
     );
+
+    fetchFromAPI(`search?part=snippet&relatedToVideoId=${id}&type=video`).then(
+      data => console.log(data),
+    );
   }, [id]);
 
   if (!videoDetail?.snippet) return 'Loading...';
