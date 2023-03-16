@@ -6,10 +6,11 @@ import { CheckCircle } from '@mui/icons-material';
 
 import { fetchFromAPI } from '../utils/fetchFromAPI';
 
-import { Video } from './';
+import { Videos } from './';
 
 const VideoDetail = () => {
   const [videoDetail, setVideoDetail] = useState(null);
+  const [videos, setVideos] = useState(null);
 
   const { id } = useParams();
 
@@ -19,16 +20,18 @@ const VideoDetail = () => {
     );
 
     fetchFromAPI(`search?part=snippet&relatedToVideoId=${id}&type=video`).then(
-      data => console.log(data),
+      data => setVideos(data.items),
     );
   }, [id]);
 
-  if (!videoDetail?.snippet) return 'Loading...';
+  if (!videoDetail?.snippet && !videos?.snippet) return 'Loading...';
 
   const {
     snippet: { title, channelId, channelTitle },
     statistics: { viewCount, likeCount },
   } = videoDetail;
+
+  console.log(videos);
 
   return (
     <Box minHeight="95vh">
@@ -80,6 +83,14 @@ const VideoDetail = () => {
           </Box>
         </Box>
       </Stack>
+      <Box
+        px={2}
+        py={{ md: 1, xs: 5 }}
+        justifyContent="center"
+        alignItems="center"
+      >
+        <Videos videos={videos} />
+      </Box>
     </Box>
   );
 };
