@@ -26,8 +26,6 @@ const VideoDetail = () => {
 
   if (!videoDetail?.snippet) return 'Loading...';
 
-  console.log(videos);
-
   const {
     snippet: { title, channelId, channelTitle },
     statistics: { viewCount, likeCount },
