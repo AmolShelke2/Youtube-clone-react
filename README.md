@@ -21,6 +21,7 @@ Give a star to the repo if you love the project.
 - Learnt about Material UI.
 - Styled all the application with Material UI.
 - Created multiple components and worked with State and props.
+- Handled API errors and many more.
 
 <hr>
 
