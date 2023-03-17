@@ -47,6 +47,8 @@ Give a star to the repo if you love the project.
 
 ![localhost_3000_(Nest Hub Max) (1)](https://user-images.githubusercontent.com/95171638/225896405-be60043b-5b09-4e77-97d5-873a31b51aad.png)
 
+<hr>
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
