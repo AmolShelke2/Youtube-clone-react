@@ -6,6 +6,18 @@ Give a star to the repo if you love the project.
 
 <hr>
 
+## Preview
+
+### Live Preview
+
+[Youtube-clone-react](https://youtube-clone-react-beta.vercel.app/)
+
+### ScreenShot
+
+![localhost_3000_(Nest Hub Max) (1)](https://user-images.githubusercontent.com/95171638/225896405-be60043b-5b09-4e77-97d5-873a31b51aad.png)
+
+<hr>
+
 ## Technologies and used tools
 
 - ReactJS
@@ -35,18 +47,6 @@ Give a star to the repo if you love the project.
 - See all the videos of the channel ordered by the date
 - Recommending related videos.
 - Responsive on every devices
-
-<hr>
-
-## Preview
-
-### Live Preview
-
-[Youtube-clone-react](https://youtube-clone-react-beta.vercel.app/)
-
-### ScreenShot
-
-![localhost_3000_(Nest Hub Max) (1)](https://user-images.githubusercontent.com/95171638/225896405-be60043b-5b09-4e77-97d5-873a31b51aad.png)
 
 <hr>
 
